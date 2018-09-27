@@ -386,13 +386,6 @@ let args = message.content.split(' ').slice(1).join(' ');
 });
 
 
- 
- client.on('message', message =>{
-  if(message.content.startsWith('Tstop')){
-    const voiceChannel = message.member.voiceChannel
-    voiceChannel.disconnect();
-    message.channel.send("تم الخروج من الروم الصوتي")
-}})
 
 
 
