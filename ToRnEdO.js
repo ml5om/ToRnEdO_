@@ -234,7 +234,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 client.on("message", message => {
  if (message.content === `${prefix}help`) {
   const embed = new Discord.RichEmbed()
-      .setColor("#000000")
+      .setColor("#121D34")
       .setDescription(`
 ${prefix}join => لدخول البوت الروم
 
@@ -268,7 +268,7 @@ client.on('message', function(message) {
  if (message.content === `${prefix}help2`) {
 if(message.author.id !== myID) return;
   const embed = new Discord.RichEmbed()
-      .setColor("#000000")
+      .setColor("#140538")
       .setDescription(`
 ${prefix}setname => لتغير اسم البوت
 
