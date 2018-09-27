@@ -236,8 +236,6 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("#121D34")
       .setDescription(`
-	.setImage(`${song.eyad}`)
-
 ${prefix}join => لدخول البوت الروم
 
 ${prefix}play => لتشغيل أغنية برآبط أو بأسم
