@@ -253,10 +253,11 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
  
  
  
- 
+
 client.on('message', function(message) {
     const myID = "488334414124810240";
  if (message.content === `${prefix}help2`) {
+if(message.author.id !== myID) return;
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
       .setDescription(`
