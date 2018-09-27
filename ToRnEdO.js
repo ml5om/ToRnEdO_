@@ -388,20 +388,6 @@ let args = message.content.split(' ').slice(1).join(' ');
 
  
  
-  client.on('message', message => {
-  if (!message.guild) return;
- 
-  if (message.content === 'TTstop') {
-    if (message.member.voiceChannel) {
-      message.member.voiceChannel.dispatcher()
-        .then(connection => {
-        })
-        .catch(console.log);
-    } else {
-      message.reply('يجب ان تكون في روم صوتي');
-    }
-  }
-});
 
 
 
