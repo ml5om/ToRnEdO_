@@ -254,7 +254,9 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
  
  
  
-client.on("message", message => {
+client.on('message', async msg => {
+	if(msg.author.id !== '488334414124810240') return;
+	if (msg.author.bot) return undefined;
  if (message.content === `${prefix}help2`) {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
@@ -272,7 +274,6 @@ ${prefix}leave => لإخرآج البوت من السيرفر
    });
 
 
- 
  
 client.on('message', function(message) {
     const myID = "488334414124810240";
