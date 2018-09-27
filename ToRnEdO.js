@@ -64,7 +64,7 @@ client.on('message', async msg => {
                     const embed1 = new Discord.RichEmbed()
                     .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
-					.setFooter(`${msg.guild.name}`)                                    					.setFooter(`${msg.owner.name}`)
+  .setFooter(`${msg.guild.name}`)                       
  
                     .setFooter("-")
                     msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
